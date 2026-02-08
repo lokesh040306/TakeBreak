@@ -1,0 +1,14 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "client": "npm run dev --prefix frontend",
+    "server": "npm run dev --prefix backend",
+    "dev": "concurrently -n CLIENT,SERVER -c blue,green \"npm run client\" \"npm run server\"",
+    "start": "npm run server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------- GLOBAL BASE ---------------- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @apply bg-bgDark text-textLight;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+
+  /* UX polish */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------- INTERACTION ---------------- */
+
+button {
+  @apply focus:outline-none;
+}
+
+input,
+textarea,
+select {
+  @apply focus:outline-none;
+}
