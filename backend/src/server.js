@@ -8,7 +8,7 @@ import startRoomExpiryWatcher from "./modules/messages/timer.service.js";
 
 /* -------------------- BOOTSTRAP SERVER -------------------- */
 
-const PORT = env.PORT;
+const PORT = process.env.PORT || env.PORT || 5000;
 
 const server = http.createServer(app);
 
