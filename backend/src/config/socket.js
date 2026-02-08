@@ -14,7 +14,7 @@ const initSocket = (server) => {
   try {
     const io = new Server(server, {
       cors: {
-        origin: true, // allow dynamic origin (safe with credentials)
+        origin: "https://takebreak-2f.onrender.com",
         methods: ["GET", "POST"],
         credentials: true,
       },

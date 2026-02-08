@@ -13,7 +13,7 @@ if (!SOCKET_URL) {
  */
 const socket = io(SOCKET_URL, {
   autoConnect: false,
-  transports: ["websocket"],
+  transports: ["polling", "websocket"],
 });
 
 /**

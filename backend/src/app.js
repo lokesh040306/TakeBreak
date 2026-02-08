@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://takebreak-2.onrender.com",
+    origin: "https://takebreak-2f.onrender.com",
     credentials: true,
   })
 );
